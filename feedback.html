@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav-menu">
+            <fieldset>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/index.html">Início</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/contato.html">Contato Geral</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/pedidos.html">Pedidos</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/feedback.html">Feedback</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/cadastro.html">Cadastro</a></li>
+                </ul>
+            </fieldset>
+    </nav>
+
+    <h1>Formulário de Feedback</h1>
+        <p>Preencha o formulário para enviar seu feedback.</p>
+        <p>Ele é muito importante para continuar fazendo um trabalho de excelência.</p>
+        <form>
+            <fieldset>
+            <h4>Campos do Formulário:</h4>
+            <label>Nome completo: <input type="text" id="nome" name="nome" placeholder="Escreva aqui"></label><br><br>
+            <label>E-mail: <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com"></label><br><br>
+            
+            <label for="produtoservico">Produto/ Serviço:*</label>
+            <select id="produtoservico" name="produtoservico" required>
+                <option value="">Escolha o produto/serviço</option>
+                <option value="paes">Pães</option>
+                <option value="doces">Doces</option>
+                <option value="salgados">Salgados</option>
+                <option value="atendimento">Atendimento</option>
+            </select><br><br>
+
+            <label>Avaliação Geral:*</label><br>
+            <label><input type="radio" name="avaliacao" id="excelente" value="excelente">Excelente</label><br>
+            <label><input type="radio" name="avaliacao" id="otimo" value="otimo">Ótimo</label><br>
+            <label><input type="radio" name="avaliacao" id="regular" value="regular">Regular</label><br>
+            <label><input type="radio" name="avaliacao" id="ruim" value="ruim">Ruim</label><br>
+            <label><input type="radio" name="avaliacao" id="pessimo" value="pessimo">Péssimo</label>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar Avaliação">
+            
+        </form>
+</body>
+</html>

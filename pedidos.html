@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav-menu">
+            <fieldset>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/index.html">Início</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/contato.html">Contato Geral</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/pedidos.html">Pedidos</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/feedback.html">Feedback</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/cadastro.html">Cadastro</a></li>
+                </ul>
+            </fieldset>
+    </nav>
+    <h1>Pedidos</h1>
+        <p>Preencha o formulário para personalizar seu pedido</p>
+
+        <form>
+            <fieldset>
+            <h4>Dados do Cliente</h4>
+            <label>Nome completo:* <input type="text" id="nome" name="nome" placeholder="Escreva aqui" required></label><br><br>
+            <label>Telefone:* <input type="tel" id="text" name="text" pattern="\d{5}-\d{4}" placeholder="9XXXX-XXXX" required></label><br><br>
+            <label>E-mail:* <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required></label><br><br>
+            </fieldset>
+
+            <fieldset>
+            <h4>Detalhes do Pedido</h4>
+
+            <label>Tipo do produto:</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Pão de beterraba</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Pão com cenoura e grãos</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Pão sírio</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Bolo de abacaxi com coco</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Bolo de chocolate</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Brigadeiro</label><br>
+            <label><input type="radio" name="tipoproduto" value="torta">Soda italiana</label><br><br>
+
+            <label>Tipo do sabor/ recheio do bolo:</label><br><br>
+            <select id="saborrecheio" name="saborrecheio" required>
+                <option value="">Escolha o sabor/ recheio </option>
+                <option value="chocolate">Chocolate</option>
+                <option value="morango">Morango</option>
+                <option value="baunilha">Baunilha</option>
+                <option value="abacaxicoco">Abacaxi com coco</option>
+            </select><br><br>
+
+            <label>Escolha o tamanho:</label>
+            <label><input type="radio" id="pequeno" name="tamanho" value="pequeno">Pequeno</label>
+            <label><input type="radio" id="medio" name="tamanho" value="medio">Médio</label>
+            <label><input type="radio" id="grande" name="tamanho" value="grande">Grande</label><br><br>
+
+            <label>Data de entrega:* <input type="date" id="dataentrega" name="dataentrega" required></label>
+            
+            </fieldset>
+
+            <fieldset>
+            <h4>Informações Adicionais</h4>
+
+            <label>Observações especiais:</label><br><br>
+            <textarea id="observacoes" name="observacoes" rows="5" cols="40" minlength="5" maxlength="300" placeholder="Escreva sua observação sobre o pedido"></textarea><br><br>
+            <label>Orçamento máximo: <input type="number" id="orcamento" name="orcamento" min="1" max="10000"></label> <label for="orcamento">Reais</label>
+            </fieldset>
+            <br>
+            
+            <input type="submit" value="Enviar Dados">
+        </form>
+</body>
+</html>

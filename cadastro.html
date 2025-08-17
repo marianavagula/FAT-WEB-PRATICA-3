@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="nav-menu">
+            <fieldset>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/index.html">Início</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/contato.html">Contato Geral</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/pedidos.html">Pedidos</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/feedback.html">Feedback</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/cadastro.html">Cadastro</a></li>
+                </ul>
+            </fieldset>
+    </nav>
+
+    <h1>Cadastro/ Newsletter</h1>
+        <p>Preencha o formulário para se cadastrar como cliente.</p>
+        <form>
+            <fieldset>
+            <h4>Dados pessoais:</h4>    
+            <label>Nome completo:* <input type="text" name="nome" placeholder="Escreva aqui" required></label><br><br>
+            <label>E-mail:* <input type="email" name="email" placeholder="seu.email@exemplo.com" required></label><br><br>
+            <label>Telefone:* <input type="text" name="telefone" pattern="\d{5}-\d{4}" placeholder="9XXXX-XXXX" required></label><br><br>
+            <label>Data de nascimento: <input type="date" name="datanascimento"></label>
+            </fieldset>
+
+            <fieldset>
+            <h4>Endereço:</h4>  
+            <label>Rua:* <input type="text" name="rua" placeholder="Escreva aqui" required></label><br><br>
+            <label>Número:* <input type="number" name="numerorua" placeholder="Escreva aqui" required></label><br><br>
+            <label>Bairro:* <input type="text" name="bairro" placeholder="Escreva aqui" required></label><br><br>
+            <label>CEP:* <input type="text" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="XXXXX-XXX" required></label><br>
+            </fieldset>
+
+            <fieldset>
+            <h4>Preferências:</h4>
+            <label><input type="checkbox" name="beterraba"> Pão de beterraba</label><br>
+            <label><input type="checkbox" name="cenoura"> Pão com cenoura e grãos</label><br>
+            <label><input type="checkbox" name="sirio"> Pão sírio</label><br>
+            <label><input type="checkbox" name="abacaxi"> Bolo de abacaxi com coco</label><br>
+            <label><input type="checkbox" name="chocolate"> Bolo de chocolate</label><br>
+            <label><input type="checkbox" name="brigadeiro"> Brigadeiro</label><br>
+            <label><input type="checkbox" name="italiana"> Soda italiana</label><br>
+            </fieldset>
+
+            <fieldset>
+            <h4>Termos:</h4>
+            <label><input type="checkbox" name="newsletter" value="sim" required>Aceito receber promoções por e-mail*</label><br>
+            <label><input type="checkbox" name="newsletter" value="sim" required>Aceito os termos de uso*</label><br>
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Enviar Dados">
+        </form>
+</body>
+</html>

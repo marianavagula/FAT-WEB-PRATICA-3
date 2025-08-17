@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Geral</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <nav id="nav-menu">
+            <fieldset>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/index.html">Início</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/contato.html">Contato Geral</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/pedidos.html">Pedidos</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/feedback.html">Feedback</a></li>
+                    <li><a href="C:/Users/maria/Documents/Pratica-3/cadastro.html">Cadastro</a></li>
+                </ul>
+            </fieldset>
+    </nav>
+
+    <h1>Contato Geral</h1>
+        <p>Preencha o formulário para enviar dúvidas, sugestões elogios ou reclamações.</p>
+        <form>
+            <fieldset>
+            <label>Nome completo:* <input type="text" id="nome" name="nome" placeholder="Escreva aqui seu nome" required></label><br><br>
+            <label>E-mail:* <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required></label><br><br>
+            <label>Telefone: <input type="tel" id="text" name="text" pattern="\d{5}-\d{4}" placeholder="9XXXX-XXXX"></label><br><br>
+
+            <label for="assunto">Assunto:*</label>
+            <select id="assunto" name="assunto" required>
+                <option value="">Escolha o assunto</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+            </select><br><br>
+
+            <label for="mensagem">Mensagem:*</label><br><br>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" minlength="10" placeholder="Escreva sua mensagem aqui" required></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar Dados">
+            
+        </form>
+</body>
+</html>
